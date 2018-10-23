@@ -1,5 +1,6 @@
 import sys
 from distutils.core import setup
+# from setuptools import setup
 import codecs
 try:
 	codecs.lookup('mbcs')
@@ -9,16 +10,20 @@ except LookupError:
 	codecs.register(func)
 
 DESCRIPTION = """\
-Class for resampling a raster grid to match that of another.
+Classes for pulling nwis data.
 """
 
+# setup(name="nwis_pull",version="0.1",description="Classes for pulling nwis data into pandas dataframes",
+	# author="Ross Kushnereit",packages=["nwis_pull"])
+
+
 def run():
-    setup(name="resampleGDAL",
+    setup(name="nwis_pull",
           version="0.1",
-          description="Class for resampling a raster grid to match that of another.",
-          author="Emily Pease",
-          packages=["resampleGDAL"],
-          author_email = 'emilypease@utexas.edu'
+          description="Classes for pulling nwis data into pandas dataframes",
+          author="Ross Kushnereit",
+          packages=["nwis_pull"],
+          author_email = 'ross.kush@gmail.com'
           )
 if __name__ == "__main__":
     run()
