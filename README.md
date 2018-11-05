@@ -15,7 +15,7 @@ Give resampleraster an input file (the one whose grid size you wish to change), 
     $ python setup.py install
 ```
 
-# Reqiuerments
+# Requirements
 
 resampleraster in its current state reqiures at a minimum 
 
