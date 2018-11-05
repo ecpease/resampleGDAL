@@ -13,11 +13,11 @@ Classes for resampling raster grids.
 """
 
 def run():
-    setup(name="resampleGDAL",
+    setup(name="ResampleRaster",
           version="0.1",
           description="Classes for resampling raster grids",
           author="Emily Pease",
-          packages=["resampleGDAL"],
+          packages=["resampleraster"],
           author_email = 'emilypease@utexas.edu'
           )
 if __name__ == "__main__":
